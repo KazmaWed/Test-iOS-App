@@ -20,6 +20,7 @@ class ModalViewController: UIViewController {
         self.dismiss(animated: true, completion: nil)
     }
     
+    //IBアウトレット
     @IBOutlet weak var containerView: UIView!
     @IBOutlet weak var scrollView: UIScrollView!
     

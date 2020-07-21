@@ -1,6 +1,3 @@
-＜このアプリについて＞
-
-
 ◇ご提示いただいた以下の要件を満たしたアプリです。
 
 ・NavigationController, TabBarControllerを理解する

@@ -16,12 +16,15 @@ class ContainerViewController: UIViewController {
         textInContainer.text = txtToString(fileName: "README")
     }
     
+    //オートレイアウト時に実行
     override func viewDidLayoutSubviews() {
         sizeFitToContents()
     }
     
+    //IBアウトレット
     @IBOutlet weak var textInContainer: UILabel!
     
+    //スクロールビューのコンテンツサイズをUIラベルにフィットさせる
     func sizeFitToContents() {
         
         //メインスレッドてUIリサイズ
@@ -41,8 +44,8 @@ class ContainerViewController: UIViewController {
         
     }
     
-    @objc func sizeFitToContents(_ notification: NSNotification) {
-        sizeFitToContents()
-    }
+//    @objc func sizeFitToContents(_ notification: NSNotification) {
+//        sizeFitToContents()
+//    }
 
 }

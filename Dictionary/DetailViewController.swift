@@ -26,7 +26,7 @@ class DetailViewController: UIViewController {
         //意味ラベルのフォントサイズ表示
         fontsizeLabel.text = String(Int(wordsMeaningLabel.font.pointSize))
         
-        //スライダーの初期値
+        //スライダーの初期値を意味ラベルから取得
         fontsizeSlider.value = Float(Int(wordsMeaningLabel.font.pointSize))
         fontsizeSlider.addTarget(self,
                                  action: #selector(self.sliderChange),
@@ -34,11 +34,12 @@ class DetailViewController: UIViewController {
         
     }
     
+    //IBアウトレット
     @IBOutlet weak var wordsMeaningLabel: UILabel!
     @IBOutlet weak var fontsizeLabel: UILabel!
-    
     @IBOutlet weak var fontsizeSlider: UISlider!
     
+    //スライダー変更時に実行
     @objc func sliderChange(sender: UISlider) {
         
         //スライダーの値を取得して
@@ -50,8 +51,9 @@ class DetailViewController: UIViewController {
         
     }
     
+    //戻るボタン押下時に実行
     override func viewWillDisappear(_ animated: Bool) {
-        // 戻るボタン押下時の処理を行います
+        
         if let viewControllers = self.navigationController?.viewControllers {
             
             // 戻るタップ時にNavigationControllerの中に自身は存在しないかどうか

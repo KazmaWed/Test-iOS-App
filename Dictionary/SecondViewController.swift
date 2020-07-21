@@ -149,8 +149,7 @@ class SecondViewController: UIViewController, UISearchBarDelegate, UITableViewDe
         
     }
  
-    //----------------------------------------WordDetailViewに遷移----------------------------------------
-    
+    //遷移先に単語情報を渡す
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if (segue.identifier == "showDetailView")
         {

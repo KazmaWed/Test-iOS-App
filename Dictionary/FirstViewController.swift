@@ -19,7 +19,7 @@ class FirstViewController: UIViewController, UISearchBarDelegate, UITableViewDat
         title = "iTunes Artist Search"
         
         //バーボタンアイテムの追加
-        navibarButtonItem = UIBarButtonItem(title: "Read Me", style: .done, target: self,
+        navibarButtonItem = UIBarButtonItem(title: "Modal", style: .done, target: self,
                                             action: #selector(navibarButtonTapped(_:)))
         self.navigationItem.rightBarButtonItems = [navibarButtonItem]
         
@@ -38,6 +38,7 @@ class FirstViewController: UIViewController, UISearchBarDelegate, UITableViewDat
         
     }
     
+    //IBアウトレット
     @IBOutlet weak var searchText: UISearchBar!
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
@@ -346,21 +347,20 @@ class FirstViewController: UIViewController, UISearchBarDelegate, UITableViewDat
         }
         
     }
-  
+    
     
     //------------------------------アラート表示簡易化ファンクション------------------------------
     
     
     func alert(title:String, message:String) {
         let alertController = UIAlertController(title: title,
-                                            message: message,
-                                            preferredStyle: .alert)
+                                                message: message,
+                                                preferredStyle: .alert)
         alertController.addAction(UIAlertAction(title: "OK",
                                                 style: .default,
                                                 handler: nil))
         present(alertController, animated: true)
     }
-    
     
     
 }
