@@ -1,15 +1,34 @@
+＜2020/07/27 追記＞
+
+
+以下の追加の課題をクリアしたものを再提出いたします。
+
+　・非同期処理でdispatchQueueを使っていますが、クロージャを使ったコールバック関数に置き換えていただきたいです。
+
+　・API通信周りのAlamofireの定義やリクエスト、URLはクラスを分けていただきたいです。自力でAlamofireでクラスを綺麗に分ける方法がうまくいかなかったら、Moyaの方を試してみていただきたいです。
+　（ライブラリ側である程度、綺麗に記述しやすいようになっています。）
+
+　・DeploymentTargetが最新のOSのみになっていて、ビルドに不便だったのでiOS 13.0以上に修正していただきたいです。
+
+　・おまけで、今回はやってもやらなくても大丈夫ですが、tableViewのdelegateとdatasourceはクラスをExtensionに分けてそこに実装してあげると綺麗になります。
+
+
+お恥ずかしい話ですが「クロージャを使ったコールバック関数」や「クラスを分ける」がAPI通信においてどのように実装するのが定石なのか分からず、私なりに調べて修正いたしましたがいかがでしょうか。
+もし何か間違いやお気づきの点がございましたら、お教えいただければありがたく思います。
+
+
 ＜このアプリについて＞
 
 
 ◇ご提示いただいた以下の要件を満たしたアプリです。
 
-・NavigationController, TabBarControllerを理解する
-・NavigationでのPush遷移とPopUpなどのModal遷移の違いを理解する
-・StoryboardとAutoLayoutを使えるようにする
-・TableViewかCollectionViewを使えるようにする
-・CocoaPodを使えるようにする
-・AlamofireかMoyaを使い、API通信を行い、JsonをパースするCodableを使用する
-・githubにてコードを管理し、提出
+　・NavigationController, TabBarControllerを理解する
+　・NavigationでのPush遷移とPopUpなどのModal遷移の違いを理解する
+　・StoryboardとAutoLayoutを使えるようにする
+　・TableViewかCollectionViewを使えるようにする
+　・CocoaPodを使えるようにする
+　・AlamofireかMoyaを使い、API通信を行い、JsonをパースするCodableを使用する
+　・githubにてコードを管理し、提出
 
 
 ＜機能について＞
