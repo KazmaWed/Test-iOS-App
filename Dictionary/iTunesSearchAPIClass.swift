@@ -19,6 +19,7 @@ class iTunesSearchAPIClass: NSObject {
     //通信エラー
     var ifError = false
     
+    //アーティスト名検索
     func search(artistName:String, closure: @escaping () -> Void) -> Void {
         
         let searchUrl = "\(baseUrl)search"
@@ -27,7 +28,7 @@ class iTunesSearchAPIClass: NSObject {
             "media":"music", //検索する作品ジャンル
             "attribute":"artistTerm", //アーティスト名で検索する
             "entity":"musicArtist", //該当するアーティストを表示する
-            "limit":"50"] //表示件数
+            "limit":"100"] //表示件数
         
         AF.request(searchUrl,
                    method: .get,
@@ -60,6 +61,7 @@ class iTunesSearchAPIClass: NSObject {
         }
     }
     
+    //アーティストの人気作品のアルバムアートワーク取得
     func lookup(closure: @escaping () -> Void) -> Void {
         
         //URL
