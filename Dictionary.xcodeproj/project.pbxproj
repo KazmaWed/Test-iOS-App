@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4702FE4024C03A80008DEAED /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4702FE3F24C03A80008DEAED /* DetailViewController.swift */; };
+		47134D1924CEACFA005A84EA /* iTunesSearchAPIClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47134D1824CEACFA005A84EA /* iTunesSearchAPIClass.swift */; };
 		472A9E0024C57F47008C936E /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 472A9DFF24C57F47008C936E /* README.txt */; };
 		47A2573524C5603600BA3126 /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47A2573424C5603600BA3126 /* ContainerViewController.swift */; };
 		47C73A8C24BEE4E4005637A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C73A8B24BEE4E4005637A7 /* AppDelegate.swift */; };
@@ -26,6 +27,7 @@
 		2B3F13F74287D29385126D8C /* Pods-Dictionary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dictionary.release.xcconfig"; path = "Target Support Files/Pods-Dictionary/Pods-Dictionary.release.xcconfig"; sourceTree = "<group>"; };
 		2C38A0667DC096C1AD9686C5 /* Pods_Dictionary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dictionary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4702FE3F24C03A80008DEAED /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		47134D1824CEACFA005A84EA /* iTunesSearchAPIClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTunesSearchAPIClass.swift; sourceTree = "<group>"; };
 		472A9DFF24C57F47008C936E /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
 		47A2573424C5603600BA3126 /* ContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
 		47C73A8824BEE4E4005637A7 /* Dictionary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dictionary.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -91,6 +93,7 @@
 				47C73A8F24BEE4E4005637A7 /* SecondViewController.swift */,
 				4702FE3F24C03A80008DEAED /* DetailViewController.swift */,
 				47F3819724BF0B0800AACBB9 /* StructAndOthers.swift */,
+				47134D1824CEACFA005A84EA /* iTunesSearchAPIClass.swift */,
 				47C73A9124BEE4E4005637A7 /* Main.storyboard */,
 				47C73A9424BEE4E5005637A7 /* Assets.xcassets */,
 				47C73A9624BEE4E5005637A7 /* LaunchScreen.storyboard */,
@@ -239,6 +242,7 @@
 				4702FE4024C03A80008DEAED /* DetailViewController.swift in Sources */,
 				47CA5E2A24C1308F00A72E43 /* FirstViewController.swift in Sources */,
 				47C73A8C24BEE4E4005637A7 /* AppDelegate.swift in Sources */,
+				47134D1924CEACFA005A84EA /* iTunesSearchAPIClass.swift in Sources */,
 				47C73A8E24BEE4E4005637A7 /* SceneDelegate.swift in Sources */,
 				47F0EF8B24C42A06004C9FE1 /* ModalViewController.swift in Sources */,
 			);
@@ -390,6 +394,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GML38ZJDQG;
 				INFOPLIST_FILE = Dictionary/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -409,6 +414,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GML38ZJDQG;
 				INFOPLIST_FILE = Dictionary/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

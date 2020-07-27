@@ -1,11 +1,3 @@
-//
-//  Struct.swift
-//  Dictionary
-//
-//  Created by KazMacBook Pro on 2020/07/15.
-//  Copyright © 2020 KAZMA WED. All rights reserved.
-//
-
 import UIKit
 import Foundation
 
